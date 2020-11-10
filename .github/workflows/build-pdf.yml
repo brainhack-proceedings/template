@@ -44,7 +44,7 @@ jobs:
        uses: actions/checkout@v2
        with:
          token: ${{ secrets.PAT_BHP }}
-         repository: agahkarakuzu/tmp-web
+         repository: brainhack-proceedings/template-web
          path: tmp-web
      - name: Compile PDF
        run: |
@@ -100,7 +100,7 @@ jobs:
        uses: actions/checkout@v2
        with:
          token: ${{ secrets.PAT_BHP }}
-         repository: agahkarakuzu/tmp-web
+         repository: brainhack-proceedings/template-web
          path: tmp-web
          submodules: true
      - name: Checkout web-page content
@@ -133,13 +133,6 @@ jobs:
        with:
          name: JSON GitHub ${{env.PUB_NAME}}
          path: data
-#     - name: Commit files
-#       run: |
-#        rsync -r figures/ static
-#        git config --local user.email "noreply@bhproceedings.com"
-#        git config --local user.name "BHBOT"
-#        git add static/pdf/brainhack-${{env.PUB_NAME}}.pdf
-#        git commit -m "[ADD] 🤖 Compiled PDF" -a
      - name: Push changes
        uses: ad-m/github-push-action@master
        with:
