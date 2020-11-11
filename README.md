@@ -53,3 +53,7 @@
 **Whenever you push your changes to the `main` branch** (either directly or via merging a branch), GitHub [actions](/actions) will be triggered to update your report. That's it! 
 
 If actions run completes successfully, 🟠 (running) will turn into ✅ (success). If your build fails, you will see ❌ instead. In that case, you can read the logs to see what went wrong.
+
+## Wiki Page 
+
+See a list of potantial problems and their solutions at the [wiki page](https://github.com/brainhack-proceedings/template/wiki).
