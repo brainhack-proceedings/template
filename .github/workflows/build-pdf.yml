@@ -8,7 +8,7 @@ env:
 jobs:
   updateInfo:
     runs-on: ubuntu-latest
-    if: "(!contains(github.event.head_commit.message, 'Initial commit') || !contains(github.event.head_commit.message, 'skip workflow'))"
+    if: (!contains(github.event.head_commit.message, 'Initial commit') && !contains(github.event.head_commit.message, 'skip workflow'))
     steps:
       - name: Checkout this (user) repository
         uses: actions/checkout@v2
@@ -33,7 +33,7 @@ jobs:
   buildPDF:
     runs-on: ubuntu-latest
     needs: updateInfo
-    if: "(!contains(github.event.head_commit.message, 'Initial commit') || !contains(github.event.head_commit.message, 'skip workflow'))"
+    if: (!contains(github.event.head_commit.message, 'Initial commit') && !contains(github.event.head_commit.message, 'skip workflow'))
     container:
       image: agahkarakuzu/bhproceedings@sha256:bfc1b7f3b714b12e04a6a6ef1f440e9f19997ac1bfecc2187f2476cf47c22ab3
 
@@ -91,7 +91,7 @@ jobs:
          path: latex/brainhack-${{env.PUB_NAME}}-html.tex
   buildHugo:
    runs-on: ubuntu-latest
-   if: "(!contains(github.event.head_commit.message, 'Initial commit') || !contains(github.event.head_commit.message, 'skip workflow'))"
+   if: (!contains(github.event.head_commit.message, 'Initial commit') && !contains(github.event.head_commit.message, 'skip workflow'))
    needs: buildPDF
    steps:  
      - name: Checkout this (user) repository
