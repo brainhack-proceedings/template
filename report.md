@@ -95,11 +95,11 @@ reviewers:
 # Show/hide the BinderHub (mybinder.org) badge
 # Accepted values: true/false (case sensitive)
 # -------------------------------------------
-binder: false
+binder: true
 
 # Enable/disable hypothes.is
 # Accepted values: true/false (case sensitive)
-hypothesis: false
+hypothesis: true
 
 # Please do not delete --- below :) 
 ---
