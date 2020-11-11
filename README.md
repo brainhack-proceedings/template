@@ -54,6 +54,8 @@
 
 If actions run completes successfully, 🟠 (running) will turn into ✅ (success). If your build fails, you will see ❌ instead. In that case, you can read the logs to see what went wrong.
 
+**If you don't want to trigger a workflow run after pushing a commit to the `main` branch,** please pass `skip workflow` as the commit message.
+
 ## Wiki Page 
 
-See a list of potantial problems and their solutions at the [wiki page](https://github.com/brainhack-proceedings/template/wiki).
+See a list of potential problems and their solutions at the [wiki page](https://github.com/brainhack-proceedings/template/wiki).
