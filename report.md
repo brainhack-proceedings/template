@@ -4,9 +4,9 @@
 # ========================================================================
 # Automatically edited by GitHub actions, please do not modify     | START 
 # ==============================================================
-report_url: https://github.com/agahkarakuzu/tmp-con
+report_url: https://github.com/brainhack-proceedings/template
 
-last_changed: 2020-11-10 01:15 UTC
+last_changed: 2020-11-11 03:28 UTC
 
 auth_created: agahkarakuzu
 # ===============================================================  | END 
