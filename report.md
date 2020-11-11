@@ -97,6 +97,10 @@ reviewers:
 # -------------------------------------------
 binder: true
 
+# Enable/disable hypothes.is
+# Accepted values: true/false (case sensitive)
+hypothesis: true
+
 # Please do not delete --- below :) 
 ---
 
