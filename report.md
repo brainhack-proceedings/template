@@ -6,9 +6,9 @@
 # ==============================================================
 report_url: https://github.com/brainhack-proceedings/template
 
-last_changed: 2020-11-11 03:39 UTC
+last_changed: 2020-12-01 08:01 UTC
 
-auth_created: agahkarakuzu
+auth_created: r03ert0
 # ===============================================================  | END 
 
 # Name of the event. 
