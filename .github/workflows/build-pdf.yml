@@ -44,7 +44,7 @@ jobs:
        uses: actions/checkout@v2
        with:
          token: ${{ secrets.PAT_BHP }}
-         repository: brainhack-proceedings/template-web
+         repository: r03ert0/template-web
          path: tmp-web
      - name: Compile PDF
        run: |
@@ -100,7 +100,7 @@ jobs:
        uses: actions/checkout@v2
        with:
          token: ${{ secrets.PAT_BHP }}
-         repository: brainhack-proceedings/template-web
+         repository: r03ert0/template-web
          path: tmp-web
          submodules: true
      - name: Checkout web-page content
